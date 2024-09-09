@@ -1,0 +1,38 @@
+// {
+//   "files": [],
+//   "references": [
+//     { "path": "./tsconfig.app.json" },
+//     { "path": "./tsconfig.node.json" }
+//   ],
+
+
+// }
+
+
+{
+  "compilerOptions": {
+
+    "target": "ES6",                                 // Specify ECMAScript target version
+    "module": "ESNext",                              // Specify module code generation
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],        // Specify library files to be included
+    "jsx": "react-jsx",                              // Use React's new JSX transform
+    "sourceMap": true,                               // Generate source maps
+    "strict": true,                                  // Enable all strict type-checking options
+    "esModuleInterop": true,                         // Emit additional JS to support "import x from y" syntax
+    "moduleResolution": "node",                      // Resolve modules using Node.js conventions
+    "resolveJsonModule": true,                       // Allow importing .json files
+    "isolatedModules": true,                         // Ensure each file is treated as a separate module
+    "skipLibCheck": true,                            // Skip type checking of declaration files
+    
+  
+    "noImplicitAny": true,                           // Raise an error on expressions and declarations with an implied 'any' type
+    "strictNullChecks": true,                        // Ensure null and undefined are handled appropriately
+    "noUnusedLocals": true,                          // Report errors on unused local variables
+    "noUnusedParameters": true,                      // Report errors on unused parameters
+    "noImplicitReturns": true,                       // Report errors for functions that return inconsistent values
+    "noFallthroughCasesInSwitch": true               // Report errors for fallthrough cases in switch statements
+  },
+  "include": ["src"],                                 // Include all .ts/.tsx files under the "src" folder
+  "exclude": ["node_modules"]                         // Exclude the node_modules folder
+}
+
